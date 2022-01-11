@@ -16,6 +16,10 @@
             </div>
             <div class="col-lg-5">
                 <div class="form-group">
+                    <label class="form-label" for="client">Nom du Client:</label>
+                    <input type="text" class="form-control " id="client" required>
+                </div>
+                <div class="form-group">
                     <label class="form-label" for="responsable">Responsable</label>
                         <select class="form-select form-check"  id="responsable" required>
                             <option value="1">Agent 1</option>
@@ -39,7 +43,7 @@
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="commentaire">Commentaire</label>
-                    <textarea type="text" class="form-control" id="commentaire" rows="7"></textarea>
+                    <textarea type="text" class="form-control" id="commentaire"></textarea>
                 <label class="form-label" for="commentaire" id="note">Ajouter votre note ici</label>
                 </div>
             </div>
@@ -68,8 +72,17 @@
                     <input type="date" class="form-control" id="dateRemboursement" required>  
                </div>
                <div class="form-group">
-                    <label class="form-label" for="modePayement">Mode de payement:</label>
-                    <select class="form-select" id="modePayement" required>
+                    <label class="form-label" for="modePayementCapital">Mode de payement du capital:</label>
+                    <select class="form-select" id="modePayementInteret" required>
+                        <option>Mvola</option>
+                        <option>OrangeMoney</option>
+                        <option>AirtelMoney</option>
+                        <option>Banque</option>
+                    </select>
+                </div>
+               <div class="form-group">
+                    <label class="form-label" for="modePayementInteret">Mode de payement des intêrets:</label>
+                    <select class="form-select" id="modePayementInteret" required>
                         <option>Mvola</option>
                         <option>OrangeMoney</option>
                         <option>AirtelMoney</option>
