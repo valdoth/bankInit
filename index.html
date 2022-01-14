@@ -16,8 +16,12 @@
             </div>
             <div class="col-lg-5">
                 <div class="form-group">
-                    <label class="form-label" for="client">Nom du Client:</label>
-                    <input type="text" class="form-control " id="client" required>
+                    <label for="client">Client</label>
+                    <select name="client" id="client" class="form-control reg-opacity">
+                        <option value="boa">BNI</option>
+                        <option value="avitech">BOA</option>
+                        <option value="accesBanque">Accès Banque</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="responsable">Responsable</label>
@@ -35,10 +39,8 @@
                     <label class="form-label" for="modeRemboursement">Mode de remboursement</label>
                         <select class="form-select" id="modeRemboursement" required>
                             <option>Mensuel</option>
-                            <option>Bimestriel</option>
-                            <option>trimestriel</option>
-                            <option>semestriel</option>
-                            <option>annuel</option>
+                            <option>Hebdomadaire</option>
+                            <option>Journalier</option>
                         </select>
                 </div>
                 <div class="form-group">
@@ -74,19 +76,23 @@
                <div class="form-group">
                     <label class="form-label" for="modePayementCapital">Mode de payement du capital:</label>
                     <select class="form-select" id="modePayementInteret" required>
-                        <option>Mvola</option>
-                        <option>OrangeMoney</option>
-                        <option>AirtelMoney</option>
-                        <option>Banque</option>
+                        <option>Virement bancaire</option>
+                        <optgroup label="Mobile Money">
+                            <option>MVola</option>
+                            <option>Airtel Money</option>
+                            <option>Orange Money</option>
+                        </optgroup>
                     </select>
                 </div>
                <div class="form-group">
                     <label class="form-label" for="modePayementInteret">Mode de payement des intêrets:</label>
                     <select class="form-select" id="modePayementInteret" required>
-                        <option>Mvola</option>
-                        <option>OrangeMoney</option>
-                        <option>AirtelMoney</option>
-                        <option>Banque</option>
+                        <option>Virement bancaire</option>
+                        <optgroup label="Mobile Money">
+                            <option>MVola</option>
+                            <option>Airtel Money</option>
+                            <option>Orange Money</option>
+                        </optgroup>
                     </select>
                 </div>
             </div>
